@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>登录</title>
+        <link rel="stylesheet" href="../../index.css">
+        <link rel="stylesheet" href="./login.css">
+    </head>
+</head>
+<body>
+<div class="backgroundImage"></div>
+<div class="loginBox">
+    <ul class="loginOptions">
+        <li class="floatLeft tabs active" id="tabLogin">登录</li>
+        <li class="floatLeft tabs">注册</li>
+    </ul>
+    <ul class="inputBox">
+        <!-- 登录 -->
+        <li class="logInRegister active">
+            <div class="accountNumber">
+                <span>账号：</span>
+                <input id="loginUserName" type="text">
+            </div>
+            <div class="accountNumber">
+                <span>密码：</span>
+                <input id="loginPassword" type="password">
+            </div>
+            <div class="accountNumber">
+                <button id="logIn">登 录</button>
+            </div>
+        </li>
+        <!-- 注册 -->
+        <li class="logInRegister">
+            <form action="">
+                <div class="accountNumber">
+                    <span>账号：</span>
+                    <input class="registeredData" name="username" type="text">
+                </div>
+                <div class="accountNumber">
+                    <span>昵称：</span>
+                    <input class="registeredData" name="nickname" type="text">
+                </div>
+
+                <div class="accountNumber">
+                    <span>密码：</span>
+                    <input class="registeredData" name="password" type="password">
+                </div>
+                <div class="selectBox">
+                    <span>性别：</span>
+                    <input class="registeredData" checked type="radio" name="sex" value="男"><span>男</span>
+                    <input class="registeredData" type="radio" style="margin-left: 10px;" name="sex" value="女"><span>女</span>
+                </div>
+                <div class="accountNumber">
+                    <button id="registered" type="button">注 册</button>
+                </div>
+            </form>
+        </li>
+    </ul>
+</div>
+
+
+<script src="../../utils/functionWrapper.js"></script>
+<script src="./login.js"></script>
+</body>
+</html>

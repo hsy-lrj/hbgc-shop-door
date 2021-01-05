@@ -1,0 +1,184 @@
+
+.red{
+    color: red;
+}
+.shoppingCartPage {
+    width: 900px;
+    margin: 0 auto;
+    min-height: 380px;
+
+}
+
+.shoppingCartPage .header{
+    height: 32px;
+    line-height: 32px;
+    padding: 5px 0;
+    background: #f3f3f3;
+    border: 1px solid #e9e9e9;
+    border-top: 0;
+    position: relative;
+}
+.shoppingCartPage .header li{
+    float: left;
+}
+/* 全选 选择*/
+.shoppingCartPage .header .select {
+    height: 18px;
+    line-height: 18px;
+    padding-top: 7px;
+    width: 122px;
+    padding-left: 11px;
+    vertical-align: middle;
+}
+.shoppingCartPage .header .select input{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+/* 商品 */
+.shoppingCartPage .header .commodity {
+    width: 300px;
+    text-align: center;
+}
+/* 单价 */
+.shoppingCartPage .header .unitPrice {
+    width: 120px;
+    padding-right: 50px;
+    text-align: right;
+}
+/* 数量 */
+.shoppingCartPage .header .number {
+    width: 80px;
+    text-align: center;
+}
+
+/* 小计 */
+.shoppingCartPage .header .tabTotalPrice {
+    width: 100px;
+    padding-right: 40px;
+    text-align: right;
+}
+/* 操作 */
+.shoppingCartPage .header .operating {
+    width: 75px;
+    text-align: center;
+}
+
+
+
+.shoppingCartPage .productList{
+   overflow: hidden;
+    height: 86px;
+    border: 1px solid #c5c5c5;
+    width: 900px;
+    padding: 10px 0;
+}
+.shoppingCartPage .productList + .productList{
+    border-top: 0;
+}
+.shoppingCartPage .productList li{
+    float: left;
+    height: 100%;
+    color: #666;
+    font-size: 12px;
+}
+
+/* 全选 选择*/
+.shoppingCartPage .productList .select {
+    padding: 7px 10px 0 11px;
+    height: 18px;
+    line-height: 18px;
+    width: 122px;
+    vertical-align: middle;
+}
+.shoppingCartPage .productList .select input{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+/* 商品 */
+.shoppingCartPage .productList .commodity {
+    width: 300px;
+}
+.shoppingCartPage .productList .commodity img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eee;
+    margin-right: 10px;
+    background: #fff;
+    padding: 2px;
+    text-align: center;
+    overflow: visible;
+}
+.shoppingCartPage .productList .commodity p{
+    width: 200px;
+    padding: 5px 0;
+}
+/* 单价 */
+.shoppingCartPage .productList .unitPrice {
+    width: 120px;
+    padding-right: 50px;
+    text-align: right;
+    padding-top: 1px;
+}
+/* 数量 */
+.shoppingCartPage .productList .number {
+    width: 80px;
+    text-align: center;
+}
+.shoppingCartPage .productList .number input{
+    width: 90%;
+    height: 20px;
+    outline: none;
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #333;
+}
+/* 小计 */
+.shoppingCartPage .productList .totalPrice {
+    width: 100px;
+    padding-right: 30px;
+    text-align: right;
+}
+/* 操作 */
+.shoppingCartPage .productList .operating {
+    width: 75px;
+    text-align: center;
+}
+
+.shoppingCartPage .productList .operating span:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.shoppingCartPage .listFooter{
+    height: 50px;
+    padding: 10px 0;
+}
+
+.shoppingCartPage .listFooter .listTotalPrice{
+    font-size: 13px;
+    color: #666;
+    height: 50px;
+    line-height: 50px;
+}
+.shoppingCartPage .listFooter .listTotalPrice span{
+    font-size: 16px;
+    color: #e2231a;
+    font-family: verdana;
+    font-weight: 700;
+}
+.shoppingCartPage .listFooter button{
+    background-color: #E64347;
+    width: 94px;
+    height: 50px;
+    outline: none;
+    border-color: #E64347;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+}

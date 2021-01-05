@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="./shoppingCart.css">
+</head>
+<body>
+
+<!-- 顶部 -->
+<div class="top">
+    <div class="tools">
+        <!-- 顶部位置 -->
+        <div class="location">
+            <span>送至：北京</span>
+        </div>
+
+        <!-- 登录 -->
+        <div class="logIn" id="logInShow">
+                <span>
+                    欢迎光临当当，请 <a href="../login/login.html" class="logInbtn1"> 登录</a>
+                </span>
+        </div>
+    </div>
+</div>
+
+<!-- 头部 -->
+<div class="header">
+    <div class="typeArea">
+        <!-- logo -->
+        <div class="logo">
+            <a href="../../index.html"><img src="../../img/logo.gif"></a>
+        </div>
+        <!-- 中间搜索框 -->
+        <div class="seek">
+            <input type="text" class="ipt1" value="一年级课外阅读必读书" onfocus="if (value ==='一年级课外阅读必读书'){value =''}"
+                   onblur="if (value ===''){value='一年级课外阅读必读书'}">
+            <div class="classify">全部分类</div>
+            <button class="ipt2"></button>
+            <!-- 搜索下面的导航栏 -->
+            <div class="littleNav">
+                <div class="littleNav1">
+                    热搜:
+                    <a href="#">牛皮明明</a>
+                    <a href="#">小威向前冲</a>
+                    <a href="#">半小时漫画史</a>
+                    <a href="#">艺术哲学</a>
+                    <a href="#">高等数学</a>
+                </div>
+                <a href="#">高级搜索</a>
+            </div>
+        </div>
+        <!-- 购物车和我的订单 -->
+        <div class="rightbtn">
+            <div class="shopping">
+                <a href="#">
+                    购物车
+                    <b id="numberOfShoppingCarts">0</b>
+                </a>
+            </div>
+            <div class="orderForm">
+                <a href="../order/order.html">我的订单</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="shoppingCartPage">
+    <ul class="header">
+        <li class="select">
+            <input id="allSelect" type="checkbox">
+            全选
+        </li>
+        <li class="commodity">商品</li>
+        <li class="unitPrice">单价</li>
+        <li class="number">数量</li>
+        <li class="tabTotalPrice">小计</li>
+        <li class="operating">操作</li>
+    </ul>
+    <!-- 商品列表 -->
+    <div id="productListBox"></div>
+
+    <div class="listFooter">
+        <div class="floatRight">
+            <div class="floatLeft listTotalPrice">总 价：<i class="red">￥</i><span class="price" id="allPrice"></span></div>
+            <button class="floatRight" id="toSettle">去结算</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- 底部 -->
+<div class="footer">
+    <!-- 关于我们信息 -->
+    <div class="footinfo">
+        <div class="footinfo1">
+            <p>
+                <a href="#">关于我们</a><span> | </span>
+                <a href="#">联系我们</a><span> | </span>
+                <a href="#">联系客服</a><span> | </span>
+                <a href="#">合作招商</a><span> | </span>
+                <a href="#">商家帮助</a><span> | </span>
+                <a href="#">营销中心</a><span> | </span>
+                <a href="#">手机京东</a><span> | </span>
+                <a href="#">友情链接</a><span> | </span>
+                <a href="#">销售联盟</a><span> | </span>
+                <a href="#">京东社区</a><span> | </span>
+                <a href="#">风险监测</a><span> | </span>
+                <a href="#">隐私政策</a><span> | </span>
+                <a href="#">京东公益</a><span> | </span>
+                <a href="#">English Site</a><span>|</span>
+                <a href="#">Media & IR</a>
+            </p>
+            <div>
+                <div class="footinfo2">
+                    <p>
+                        <a href="#">京公网安备 11000002000088号</a><span> | </span>
+                        <span>京ICP证070359号</span><a href="#">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a><span> |
+                            </span><span>新出发京零&nbsp; 字第大120007号</span>
+                    </p>
+                    <p>
+                        <span>互联网出版许可证编号新出网证(京)字150号</span><span> | </span>
+                        <a href="#">出版物经营许可证</a><span> | </span><a href="#">网络文化经营许可证京网文[2014]2148-348号</a><span> |
+                            </span><span>违法和不良信息举报电话：4006561155</span>
+                    </p>
+                    <p>
+                        <span>Copyright&nbsp;©&nbsp;2004&nbsp;-&nbsp;2020&nbsp;&nbsp;京东JD.com&nbsp;版权所有</span><span>|</span><span>消费者维权热线：4006067733</span>
+                        <a
+                                href="#">经营证照</a><span>|</span><span>(京)网械平台备字(2018)第00003号</span><span>|</span><span>营业执照</span>
+                    </p>
+                </div>
+                <div class="footinfo3">
+                    <p>
+                        <a href="#">Global Site</a><span> | </span>
+                        <a href="#">Сайт России</a><span> | </span><a href="#">Situs Indonesia</a><span> | </span><a
+                            href="#">Sitio de España</a><span> | </span><a href="#">เว็บไซต์ประเทศไทย</a>
+                    </p>
+                </div>
+
+            </div>
+            <p class="footinfo_1">
+                <a href="#" class="foota-1"></a>
+                <a href="#" class="foota-2"></a>
+                <a href="#" class="foota-3"></a>
+                <a href="#" class="foota-4"></a>
+                <a href="#" class="foota-5"></a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="../../utils/functionWrapper.js"></script>
+<script src="./shoppingCart.js"></script>
+</body>
+</html>
